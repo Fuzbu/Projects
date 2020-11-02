@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgb(247, 5, 5);
+  background: linear-gradient(
+    -100deg,
+    rgba(247, 5, 5, 1) 0%,
+    rgba(163, 255, 0, 1) 100%
+  );
+}
+
+header {
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.26);
+  padding: 0.5rem;
+  background: rgb(247, 5, 5);
+  background: linear-gradient(
+    107deg,
+    rgba(247, 5, 5, 1) 50%,
+    rgba(163, 255, 0, 1) 50%
+  );
+  color: black;
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 5px solid black;
+}
+
+section {
+  width: 90%;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.healthbar {
+  width: 100%;
+  height: 40px;
+  border: 3px solid rgb(0, 0, 0);
+  margin: 1rem 0;
+  background: #fde5e5;
+}
+
+.healthbar__value {
+  background-color: rgba(247, 5, 5, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  border: 5px solid black;
+  background: rgba(163, 255, 0, 1);
+}
+
+#monster h2,
+#player h2 {
+  margin: 0.25rem;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font: inherit;
+  border: 5px solid black;
+  background-color: rgba(247, 5, 5, 1);
+  color: Black;
+  font-weight: 900;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin: 1rem;
+  width: 12rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:active {
+  background-color: rgba(163, 255, 0, 1);
+  border-color: black;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
+}
+
+button:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  box-shadow: none;
+  color: #3f3f3f;
+  cursor: not-allowed;
+}
+
+#log ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#log li {
+  margin: 0.5rem 0;
+}
+
+.log--player {
+  color: #7700ff;
+}
+
+.log--monster {
+  color: #da8d00;
+}
+
+.log--damage {
+  color: red;
+}
+
+.log--heal {
+  color: green;
+}
