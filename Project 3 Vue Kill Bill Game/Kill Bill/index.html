@@ -21,24 +21,52 @@
     <section id="monster" class="container">
       <h2>Bills Health</h2>
       <div class="healthbar">
-        <div class="healthbar__value"></div>
+        <div class="healthbar__value" v-bind:style=" enemyBarStyles"></div>
       </div>
     </section>
     <section id="player" class="container">
       <h2>Your Health</h2>
       <div class="healthbar">
-        <div class="healthbar__value"></div>
+        <div class="healthbar__value" v-bind:style="playerBarStyles"></div>
       </div>
     </section>
-    <section id="controls">
-      <button>ATTACK</button>
-      <button>SPECIAL ATTACK</button>
-      <button>HEAL</button>
-      <button>SURRENDER</button>
+
+    <section class="container" v-if="winner">
+      <h2>Game Over!</h2>
+      <h3 v-if="winner === 'enemy'">You ded...</h3>
+      <h3 v-else-if="winner === 'player'">You Killed Bill !!</h3>
+      <h3 v-else>It a draw, close fight!</h3>
+      <button v-on:click="startGame">Replay</button>
+    </section>
+
+
+    <section id="controls" v-else>
+      <button v-on:click="attackEnemy">ATTACK</button>
+      <button v-bind:disabled="mayUseSpecialAttack" v-on:click="specialAttackEnemy">SPECIAL ATTACK</button>
+      <button v-on:click="healPlayer">HEAL</button>
+      <button v-on:click="surrender">SURRENDER</button>
     </section>
     <section id="log" class="container">
+
+
+
+
       <h2>Battle Log</h2>
-      <ul></ul>
+      <ul>
+        <li v-for="logMessage in logMessages">
+
+          <span
+            v-bind:class="{'log--player': logMessage.actionBy === 'player', 'log--enemy': logMessage.actionBy === 'enemy'}">{{ logMessage.actionBy === 'player' ? 'Player' : 'Enemy'}}</span>
+
+          <span v-if="logMessage.actionType === 'heal'"> heals himself for
+            <span class="log--heal">{{logMessage.actionValue}}</span></span>
+
+          <span v-else>
+            attacks and deals
+            <span class="log--damage"> {{logMessage.actionValue}}</span>
+          </span>
+        </li>
+      </ul>
     </section>
   </div>
 </body>
