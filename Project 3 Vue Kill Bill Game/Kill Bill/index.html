@@ -56,7 +56,7 @@
         <li v-for="logMessage in logMessages">
 
           <span
-            v-bind:class="{'log--player': logMessage.actionBy === 'player', 'log--enemy': logMessage.actionBy === 'enemy'}">{{ logMessage.actionBy === 'player' ? 'Player' : 'Enemy'}}</span>
+            v-bind:class="{'log--player': logMessage.actionBy === 'player', 'log--enemy': logMessage.actionBy === 'enemy'}">{{ logMessage.actionBy === 'player' ? 'Player' : 'Bill'}}</span>
 
           <span v-if="logMessage.actionType === 'heal'"> heals himself for
             <span class="log--heal">{{logMessage.actionValue}}</span></span>

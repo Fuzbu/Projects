@@ -73,20 +73,20 @@ const app = Vue.createApp({
       this.currentRound++;
       const attackValue = getRandomValue(5, 12);
       this.enemyHp = this.enemyHp - attackValue;
-      this.addLogMessages('player', 'attack', 'attackValue');
+      this.addLogMessage('player', 'attack', attackValue);
       this.attackPlayer();
     },
 
     attackPlayer() {
       const attackValue = getRandomValue(8, 15);
       this.playerHp = this.playerHp - attackValue;
-      this.addLogMessages('enemy', 'attack', 'attackValue')
+      this.addLogMessage('enemy', 'attack', attackValue);
     },
     specialAttackEnemy() {
       this.currentRound++;
       const attackValue = getRandomValue(10, 25);
       this.enemyHp = this.enemyHp - attackValue;
-      this.addLogMessages('player', 'special-attack', 'attackValue')
+      this.addLogMessage('player', 'special-attack', attackValue);
       this.attackPlayer();
     },
     healPlayer() {
@@ -97,7 +97,7 @@ const app = Vue.createApp({
       } else {
         this.playerHp = this.playerHp + healValue;
       }
-      this.addLogMessages('player', 'heal', 'healValue')
+      this.addLogMessage('player', 'heal', healValue);
       this.attackPlayer();
     },
     surrender() {
