@@ -1,0 +1,58 @@
+<!-- Input Tags -->
+<div class="input-tags-section">
+  <h1>Playing with Tags</h1>
+  <form onsubmit="alert('submit form')">
+    <label for="text-field">Text Field</label>
+    <input id="text-field" type="text" />
+
+    <label for="colors-field">Colors</label>
+    <input id="colors-field" type="color" />
+
+    <p>Radio</p>
+    <input type="radio" id="option1" name="options">
+    <label for="option1">option 1</label>
+    <input type="radio" id="option2" name="options">
+    <label for="option2">option 2</label>
+    <input type="radio" id="option3" name="options">
+    <label for="option3">option 3</label>
+
+    <label for="checkbox1">Checkbox 1</label>
+    <input id="checkbox1" type="checkbox" />
+    <label for="checkbox2">Checkbox 2</label>
+    <input id="checkbox2" type="checkbox" />
+
+    <label for="file-upload-field">Colors</label>
+    <input id="file-upload-field" type="file" />
+
+    <label for="number-field">Number</label>
+    <input id="number-field" type="number" />
+
+    <label for="password-field">Password</label>
+    <input id="password-field" type="password" />
+
+    <label for="datetime-field">Date Time</label>
+    <input id="datetime-field" type="datetime-local" />
+    <button type="submit">submit</button>
+  </form>
+</div>
+
+<div>
+  <table border="1" width="200px" height="200px">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+  </table>
+</div>
+
+<style>
+  .input-tags-section {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+</style>

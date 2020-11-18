@@ -1,0 +1,129 @@
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; 
+  
+    
+  }
+
+
+
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    font-weight: bold;
+    font-size: 20px;
+    height: 15%;
+    
+  }
+    
+
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkorange;
+    height: 70%;
+    border: 1px solid white;
+    
+    
+    
+    
+    
+    
+  }
+  
+  .Navigation-Block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 20%;
+    height: 100%;
+    font-size: 30px;
+    border: 1px solid white;
+   
+   
+
+
+  }
+
+
+  .Content-Block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    width: 60%;
+    height: 100%;
+    font-size: 30px;
+    border: 1px solid white;
+    
+    
+   
+   
+
+
+  }
+
+  .Advertisement-Block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 20%;
+    height: 100%;
+    font-size: 30px;
+    border: 1px solid white;
+    
+   
+
+
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    background-color:  khaki;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+
+  }
+
+  @media screen and (max-width:767px){
+    .flex-container{
+      flex-direction: column;
+      
+      }
+      .Navigation-Block{
+        width: 100%;
+
+      }
+
+      .Content-Block{
+        width: 100%;
+        
+      }
+
+      .Advertisement-Block{
+        width: 100%;
+      
+      }
+  }
+
+
+  
+
+
+

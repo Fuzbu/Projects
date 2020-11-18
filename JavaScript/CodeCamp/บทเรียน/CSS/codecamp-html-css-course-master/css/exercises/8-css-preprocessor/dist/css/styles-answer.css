@@ -1,0 +1,22 @@
+.ex-btn-success, .ex-btn-warning, .ex-btn {
+  background-color: #eee;
+  border: 2px solid #aaa;
+  padding: 4px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.ex-btn-warning {
+  color: white;
+  background-color: crimson;
+  border: 2px solid darkgreen;
+}
+
+.ex-btn-success {
+  color: white;
+  background-color: seagreen;
+  border-color: green;
+}
+
+/*# sourceMappingURL=styles-answer.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 1 - Answer</title>
+  <link rel="stylesheet" href="exercise-1.css">
+</head>
+<body>
+  <form class="student-registration-form">
+    <!-- เขียนโค้ดในโจทย์ตรงนี้ -->
+    <h1>แบบฟอร์มลงทะเบียนนักเรียน</h1>
+    <h2>CODECAMP #7</h2>
+
+    <label>ชื่อ</label>
+    <input type="text">
+
+    <label>นามสกุล</label>
+    <input type="text">
+
+    <label>อายุ</label>
+    <input type="number">
+
+    <label>วัน เดือน ปีเกิด</label>
+    <input type="datetime-local">
+    
+    <label>สีที่ชอบ</label>
+    <input type="color">
+
+    <p>เพศ</p>
+    <input type="radio" id="male" name="gender">
+    <label for="male">ชาย</label>
+    <input type="radio" id="female" name="gender">
+    <label for="female">หญิง</label>
+    <input type="radio" id="alternative" name="gender">
+    <label for="alternative">ทางเลือก</label>
+
+    <label for="avatar-upload">รูปประจำตัว</label>
+    <input type="file" id="avatar-upload">
+
+    <label for="motto">คติประจำใจ</label>
+    <textarea id="motto" rows="10"></textarea>
+    <button>Submit</button>
+  </form>
+</body>
+</html>

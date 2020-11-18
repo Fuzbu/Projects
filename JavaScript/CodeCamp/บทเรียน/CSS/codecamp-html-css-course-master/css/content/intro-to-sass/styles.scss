@@ -1,0 +1,45 @@
+@use "base";
+
+.primary-text {
+  color: base.$primary-color;
+}
+
+.secondary-text {
+  color: base.$secondary-color;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    font-size: base.$font-size-large;
+    color: skyblue;
+  }
+}
+
+%message-shared {
+  border: 3px solid hsl(0, 0%, 50%);
+  font-size: base.$font-size-medium;
+  color: grey;
+}
+
+.message-default {
+  @extend %message-shared;
+}
+
+.message-success {
+  @extend %message-shared;
+  color: limegreen;
+}
+
+.message-error {
+  @extend %message-shared;
+  color: crimson;
+}
+
+.message-warning {
+  @extend %message-shared;
+  color: khaki;
+}

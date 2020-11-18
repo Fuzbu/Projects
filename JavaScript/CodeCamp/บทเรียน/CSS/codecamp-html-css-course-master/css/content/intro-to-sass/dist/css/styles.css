@@ -1,0 +1,35 @@
+.primary-text {
+  color: red;
+}
+
+.secondary-text {
+  color: #609f60;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  font-size: 60px;
+  color: skyblue;
+}
+
+.message-warning, .message-error, .message-success, .message-default {
+  border: 3px solid gray;
+  font-size: 30px;
+  color: grey;
+}
+
+.message-success {
+  color: limegreen;
+}
+
+.message-error {
+  color: crimson;
+}
+
+.message-warning {
+  color: khaki;
+}
+
+/*# sourceMappingURL=styles.css.map */
