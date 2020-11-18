@@ -1,9 +1,0 @@
-
-
-
-1. Single Instruction Single Data stream - คือ 1 core processor ที่ทำงานประมวลผล จาก 1 คำสั่ง ใน 1 หน่วยความจำ
-   Symmetric MultiProcessing - คือ มี หลาย processor อยู่ในเครื่องปฎิบัติการตัวเดียว และ ระบบความจำ ตัวเดียวกัน
-
-2. ไม่เกิน 4 ตัว
-
-3.  Snoop และ Data Intervention 
