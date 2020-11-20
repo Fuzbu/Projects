@@ -313,16 +313,19 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 80%;
+  width: 75%;
 }
 .skills__css {
-  width: 75%;
+  width: 70%;
 }
 .skills__js {
   width: 65%;
 }
 .skills__vue {
-  width: 45%;
+  width: 40%;
+}
+.skills__m-c {
+  width: 40%;
 }
 .skills__english {
   width: 86%;
@@ -330,9 +333,7 @@ img {
 .skills__problem {
   width: 80%;
 }
-.skills__m-c {
-  width: 80%;
-}
+
 .skills__img {
   display: block;
   margin-left: auto;
