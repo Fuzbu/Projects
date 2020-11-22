@@ -14,7 +14,7 @@ const cover = document.getElementById('cover');
 
 
 // Song Titles
-const song = ['hey', 'summer', 'ukulele'];
+const songs = ['hey', 'summer', 'ukulele'];
 
 
 // Keep track of song
@@ -22,7 +22,7 @@ let songIndex = 2;
 
 
 // Load Song Details into DOM
-loadSong(song[songIndex]);
+loadSong(songs[songIndex]);
 
 // Update song Details
 function loadSong(song) {
@@ -35,7 +35,7 @@ function loadSong(song) {
 // Play Song
 function playSong() {
   musicContainer.classList.add('play');
-  playBtn.querySelector('i.fas').classlist.remove('fa-play');
+  playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
 
   audio.play();
@@ -46,16 +46,52 @@ function playSong() {
 // Pause Song
 function pauseSong() {
   musicContainer.classList.remove('play');
-  playBtn.querySelector('i.fas').classlist.add('fa-play');
+  playBtn.querySelector('i.fas').classList.add('fa-play');
   playBtn.querySelector('i.fas').classList.remove('fa-pause');
 
   audio.pause();
 }
 
+//Previous Song
+function prevSong() {
+  songIndex--;
+
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+
+  loadSong(songs[songIndex]);
+
+  playSong();
+}
+
+
+//Next Song
+function nextSong() {
+  songIndex++;
+
+  if (songIndex > songs.length - 1) {
+    songIndex = 0;
+  }
+
+  loadSong(songs[songIndex]);
+
+  playSong();
+}
+
+
+// Update Progress Bar
+function updateProgress(e) {
+  const { duration, currentTime } = e.srcElement;
+  const progressPercent = (currentTime / duration) * 100;
+
+  progress.style.width = `${progressPercent}%`;
+}
+
 
 // Event Listeners
 playBtn.addEventListener('click', () => {
-  const isPlaying = musicContainer.classlist.contains('play');
+  const isPlaying = musicContainer.classList.contains('play');
 
   if (isPlaying) {
     pauseSong();
@@ -64,3 +100,12 @@ playBtn.addEventListener('click', () => {
     playSong();
   }
 });
+
+
+// Change song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
+
+// Time/Song Update
+audio.addEventListener('timeupdate', updateProgress);
