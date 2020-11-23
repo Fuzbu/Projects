@@ -14,11 +14,11 @@ const cover = document.getElementById('cover');
 
 
 // Song Titles
-const songs = ['hey', 'summer', 'ukulele'];
+const songs = ['Indestructible', 'Start The Machine', 'Bulls On Parade', 'Open Your Eyes', 'Glass Shatters'];
 
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 4;
 
 
 // Load Song Details into DOM
@@ -122,7 +122,7 @@ nextBtn.addEventListener('click', nextSong);
 
 
 // Time/Song Update
-audio.addEventListener('timeUpdate', updateProgress);
+audio.addEventListener('timeupdate', updateProgress);
 
 //Click on Progress Bar
 progressContainer.addEventListener('click', setProgress);

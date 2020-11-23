@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Permanent+Marker&display=swap");
 
 * {
   box-sizing: border-box;
@@ -15,12 +15,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Gloria Hallelujah", cursive;
   margin: 0;
 }
 
 .music-container {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
   box-shadow: 0 10px 15px 10px rgba(252, 169, 169, 0.6);
   display: flex;
@@ -37,7 +37,7 @@ body {
 
 .img-container::after {
   content: "";
-  background-color: #5e0000;
+  background-color: #fff;
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
@@ -84,7 +84,7 @@ body {
   background-color: #fff;
   border: 0;
   color: #331233;
-  font: 20px;
+  font-size: 20px;
   cursor: pointer;
   padding: 10px;
   margin: 0 20px;
@@ -132,7 +132,7 @@ body {
 }
 
 .progress {
-  background-color: #f7f0f2;
+  background-color: #5e0000;
   border-radius: 5px;
   height: 100%;
   width: 0%;
