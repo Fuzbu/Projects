@@ -241,6 +241,7 @@ img {
 }
 .home__img img {
   border-radius: 2rem;
+  box-shadow: 0 30px 36px rgba(0, 0, 0, 0.15);
 }
 
 /*Button*/
@@ -322,10 +323,10 @@ img {
   width: 70%;
 }
 .skills__js {
-  width: 65%;
+  width: 60%;
 }
 .skills__vue {
-  width: 40%;
+  width: 30%;
 }
 .skills__m-c {
   width: 40%;
@@ -355,12 +356,13 @@ img {
 }
 .work__img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 .work__img img {
   transition: 1s;
   cursor: pointer;
+  
 }
 .work__img img:hover {
   transform: scale(1.1);
@@ -512,4 +514,9 @@ img {
   }
   .home__img{
     right: 5%;
+  }
+
+  .work__img{
+    margin-left: auto;
+    margin-right: auto;
   }
