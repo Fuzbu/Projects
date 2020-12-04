@@ -38,7 +38,7 @@ function playSong() {
   playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
 
-  audio.play();
+  audio.play(auto);
 }
 
 
