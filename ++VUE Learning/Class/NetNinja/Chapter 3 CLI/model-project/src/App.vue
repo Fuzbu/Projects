@@ -16,6 +16,8 @@ export default {
   data() {
     return {
       title: "My first Vue App",
+      header: "Sign up for giveaway" ,
+      text: "Grab your free code"
     };
   },
 };
