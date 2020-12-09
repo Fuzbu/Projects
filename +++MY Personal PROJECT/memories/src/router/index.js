@@ -25,6 +25,26 @@ const routes = [
     name: "settings",
     component: () => import("@/views/Settings.vue")
   },
+  {
+    path: "/editor",
+    name: "create_article",
+    component: () => import("@/views/ArticleCreate.vue")
+  },
+  {
+    path: "/editor/:article-slug",
+    name: "edit_article",
+    component: () => import("@/views/ArticleEdit.vue")
+  },
+  {
+    path: "/article/:article-slug",
+    name: "article",
+    component: () => import("@/views/Article.vue")
+  },
+  {
+    path: "/:username",
+    name: "profile",
+    component: () => import("@/views/Profile.vue")
+  },
 ]
 
 const router = new VueRouter({
