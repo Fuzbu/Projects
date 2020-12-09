@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style>
-@import "//demo.productionready.io/main.css";
+/* @import "//demo.productionready.io/main.css"; */
 </style>

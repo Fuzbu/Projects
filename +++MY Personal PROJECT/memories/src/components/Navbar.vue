@@ -12,13 +12,17 @@
             <i class="ion-compose"></i>&nbsp;New Post
           </a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="ion-gear-a"></i>&nbsp;Settings
-          </a>
+          <router-link class="nav-link" to="/settings">Settings</router-link>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="">Sign up</a>
+          <router-link class="nav-link" to="/login">Sign In</router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link class="nav-link" to="/register">Register</router-link>
         </li>
       </ul>
     </div>
