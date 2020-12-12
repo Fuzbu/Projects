@@ -9,7 +9,9 @@
           </p>
 
           <ul class="error-messages">
-            <li v-for:="error in errors">{{ error.message }}</li>
+            <li v-for="error in errors" :key="error.message">
+              {{ error.message }}
+            </li>
           </ul>
 
           <form>
