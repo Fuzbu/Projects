@@ -31,7 +31,7 @@
           </div>
           <div class="m-auto relative" style="width:300px;height:300px">
             <img
-              class="w-full rounded-full block m-auto h-full"
+              class="w-full rounded-full block m-auto h-full animate-spin"
               src="@/img/babylogo.png"
               alt="Album Pic"
             />
@@ -138,7 +138,7 @@
             :style="indexo == index ? '' : ''"
             :class="
               indexo == index
-                ? 'bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 text-white'
+                ? 'bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 text-white animate-pulse'
                 : ''
             "
             class="flex py-1 rounded cursor-pointer w-11/12 m-auto"
