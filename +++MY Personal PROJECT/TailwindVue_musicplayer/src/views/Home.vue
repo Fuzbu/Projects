@@ -2,7 +2,7 @@
   <!-- Header -->
   <div class="border-solid border-8 border-pink-500 ">
     <p class="font-serif text-4xl font-extrabold">
-      Babby Lullaby :)
+      Baby Lullaby :)
     </p>
     <img
       class="object-scale-down h-20 w-full relative pb-4"
