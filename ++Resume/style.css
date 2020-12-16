@@ -317,16 +317,16 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 75%;
+  width: 80%;
 }
 .skills__css {
-  width: 70%;
+  width: 75%;
 }
 .skills__js {
   width: 60%;
 }
 .skills__vue {
-  width: 30%;
+  width: 45%;
 }
 .skills__m-c {
   width: 40%;
