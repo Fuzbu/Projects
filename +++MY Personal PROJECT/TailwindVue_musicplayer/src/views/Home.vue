@@ -1,12 +1,12 @@
 <template>
   <!-- Header -->
-  <div class="border-solid border-8 border-light-blue-500 ">
-    <p class="text-4xl font-extrabold">
-      Music Box
+  <div class="border-solid border-8 border-pink-500 ">
+    <p class="font-serif text-4xl font-extrabold">
+      Babby Lullaby :)
     </p>
     <img
       class="object-scale-down h-20 w-full relative pb-4"
-      src="@/static/logo.png"
+      src="@/static/moonlogo.png"
     />
   </div>
   <div
@@ -32,7 +32,7 @@
           <div class="m-auto relative" style="width:300px;height:300px">
             <img
               class="w-full rounded-full block m-auto h-full"
-              src="https://tailwindcss.com/img/card-top.jpg"
+              src="@/img/babylogo.png"
               alt="Album Pic"
             />
             <div class="cd-center"></div>
@@ -65,7 +65,7 @@
             </svg>
           </div>
           <div
-            class="text-white p-4 rounded-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 shadow-lg"
+            class="text-white p-4 rounded-full bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 shadow-lg"
           >
             <svg
               v-if="!pauseTrack"
@@ -138,7 +138,7 @@
             :style="indexo == index ? '' : ''"
             :class="
               indexo == index
-                ? 'bg-gradient-to-r from-red-500 via-red-600 to-red-700 text-white'
+                ? 'bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 text-white'
                 : ''
             "
             class="flex py-1 rounded cursor-pointer w-11/12 m-auto"
@@ -200,10 +200,7 @@
           v-for="(audio, indexo) in audios.slice(index, index + 1)"
           :key="indexo"
         >
-          <img
-            class="w-10 h-10 rounded-full"
-            src="https://tailwindcss.com/img/card-top.jpg"
-          />
+          <img class="w-10 h-10 rounded-full" src="@/static/moonlogo.png" />
           <div class="flex flex-col ml-2 font-semibold">
             <p>{{ audio.name }}</p>
             <p class="text-xs text-gray-600">{{ audio.artist }}</p>
@@ -315,6 +312,13 @@ import { ref, reactive, computed } from "vue";
 import A1 from "@/music/A1.mp3";
 import A2 from "@/music/A2.mp3";
 import A3 from "@/music/A3.mp3";
+import A4 from "@/music/A4.mp3";
+import A5 from "@/music/A5.mp3";
+import A6 from "@/music/A6.mp3";
+import A7 from "@/music/A7.mp3";
+import A8 from "@/music/A8.mp3";
+import A9 from "@/music/A9.mp3";
+import A10 from "@/music/A10.mp3";
 
 import { Howl, Howler } from "howler";
 
@@ -329,21 +333,56 @@ export default {
 
   setup() {
     const audios = ref([
-      { name: "Silver Spirit", file: A1, artist: "Shamika Cox", howl: null },
-      { name: "Dance With Me", file: A2, artist: "Ehrling", howl: null },
-      { name: "Children", file: A3, artist: "SKYBAR", howl: null },
-      { name: "Silver Spirit", file: A1, artist: "Shamika Cox", howl: null },
-      { name: "Dance With Me", file: A2, artist: "Ehrling", howl: null },
-      { name: "Children", file: A3, artist: "SKYBAR", howl: null },
-      { name: "Silver Spirit", file: A1, artist: "Shamika Cox", howl: null },
-      { name: "Dance With Me", file: A2, artist: "Ehrling", howl: null },
-      { name: "Children", file: A3, artist: "SKYBAR", howl: null },
-      { name: "Silver Spirit", file: A1, artist: "Shamika Cox", howl: null },
-      { name: "Dance With Me", file: A2, artist: "Ehrling", howl: null },
-      { name: "Children", file: A3, artist: "SKYBAR", howl: null },
-      { name: "Silver Spirit", file: A1, artist: "Shamika Cox", howl: null },
-      { name: "Dance With Me", file: A2, artist: "Ehrling", howl: null },
-      { name: "Children", file: A3, artist: "SKYBAR", howl: null },
+      {
+        name: "Dig",
+        file: A1,
+        artist: "Mudvayne",
+        howl: null,
+      },
+      { name: "Glass Shatters", file: A2, artist: "Disturbed", howl: null },
+      { name: "Open Your Eyes", file: A3, artist: "Alter Bridge", howl: null },
+      {
+        name: "Bulls Parade",
+        file: A4,
+        artist: "Rage Against The Machine",
+        howl: null,
+      },
+      {
+        name: "Indestructible",
+        file: A5,
+        artist: "Disturbed",
+        howl: null,
+      },
+      {
+        name: "Unleashed",
+        file: A6,
+        artist: "Killswitch Engage",
+        howl: null,
+      },
+      {
+        name: "My Hero",
+        file: A7,
+        artist: "Foo Fighters",
+        howl: null,
+      },
+      {
+        name: "Wait and Bleed",
+        file: A8,
+        artist: "Slipknot",
+        howl: null,
+      },
+      {
+        name: "94 Hours",
+        file: A9,
+        artist: "As I Lay Dying",
+        howl: null,
+      },
+      {
+        name: "Killing In the Name",
+        file: A10,
+        artist: "Rage Against The Machine",
+        howl: null,
+      },
     ]);
     const step = ref(0);
     const nextButton = ref(true);
