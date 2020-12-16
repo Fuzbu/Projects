@@ -319,6 +319,7 @@ import A7 from "@/music/A7.mp3";
 import A8 from "@/music/A8.mp3";
 import A9 from "@/music/A9.mp3";
 import A10 from "@/music/A10.mp3";
+import A11 from "@/music/A11.mp3";
 
 import { Howl, Howler } from "howler";
 
@@ -381,6 +382,12 @@ export default {
         name: "Killing In the Name",
         file: A10,
         artist: "Rage Against The Machine",
+        howl: null,
+      },
+      {
+        name: "Bonus Track",
+        file: A11,
+        artist: "",
         howl: null,
       },
     ]);
